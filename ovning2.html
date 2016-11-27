@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Övning 2</title>
+	<script>
+		function skrivUt()
+		{
+			var saldo = 1000;
+			var ranta = 1.10;
+			var antalVarv = 1000;
+			for(var i = 0; i < antalVarv; i++)
+			{
+   				saldo = saldo * ranta;
+   				
+			}
+			alert("Behållningen är " + saldo + " efter " + antalVarv + " ränteberäkningar med räntan " + ranta);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Klicka här!" onclick="skrivUt();">
+
+</body>
+</html>

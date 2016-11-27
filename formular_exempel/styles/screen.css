@@ -1,0 +1,28 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+form {
+    float: left;
+    padding: 2px;
+    font-family: inherit;
+    width: 340px;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-bottom: 0.5em;
+    padding-right: 1em;
+    clear:left;
+}
+
+input {
+    float: right;
+    width: 20em;
+    margin-bottom: 0.5em;
+    clear: right;
+    padding: 2px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulärexempel</title>
+    <link rel="stylesheet" type="text/css" href="styles/screen.css" ></link>
+    <script type="text/javascript" src="scripts/validate_form.js" ></script>
+</head>
+<body>
+    <h1>Registrera användaruppgifter</h1>
+    <p>Skriv in ditt namn och epost. Klicka sedan på registera.</p>
+    <form id="registerform" method="post" action="register.php" onsubmit= "return validate();">
+        <label>Förnamn</label><input type="text" id="firstname" name="firstname"  />
+        <label>Efternamn</label><input type="text" id="lastname" name="lastname"  />
+        <label>Epost</label><input type="text" id="email" name="email" />
+        <input type="submit" value="Registera" />
+    </form>
+</body>
+</html>

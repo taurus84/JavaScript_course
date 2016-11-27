@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Övning med textsträngar</title>
+  <script>
+  	function skrivUt() 
+  	{
+  		alert("Scriptet kontrollerar om det inmatade ordet är ett palindrom");
+  		var namn = prompt("Skriv in ett namn");
+  		while(namn != null)
+  		{
+  			namn = namn.toLowerCase();
+  			var bakofram = "";
+  			for (var i = namn.length - 1; i >= 0; i--) {
+  			bakofram = bakofram + namn.charAt(i);
+  			}
+  			if(namn == bakofram) 
+  			{
+  				alert(namn + " är ett palindrom!");
+  			}
+  			else
+  			{
+  				alert(namn + " är inte ett palindrom");
+  			}
+  			namn = prompt("Skriv in ett nytt namn");
+  		}
+  		alert("Adjö!");
+  	}
+  	
+  </script>
+</head>
+<body>
+	<input type="button" value="Klicka här" onclick="skrivUt();">
+</body>
+</html>
