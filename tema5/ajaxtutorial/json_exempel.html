@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JSON Exempel</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<ul id="person-lista">
+
+</ul>
+
+<script>
+    var data = {"personer":[
+        {
+            "fnamn":"RACHELLE",
+            "enamn":"ZWIEFELHOFER",
+            "epost":"rachelle.zwiefelhofer@somefakedomain.nu"
+        },
+        {
+            "fnamn":"RACQUEL",
+            "enamn":"JOH",
+            "epost":"racquel.joh@somefakedomain.nu"
+        },
+        {
+            "fnamn":"RAE",
+            "enamn":"BRAVARD",
+            "epost":"rae.bravard@somefakedomain.nu"
+        },
+        {
+            "fnamn":"RAFAEL",
+            "enamn":"SAGASTUME",
+            "epost":"rafael.sagastume@somefakedomain.nu"
+        },
+        {
+            "fnamn":"RAISA",
+            "enamn":"REINES",
+            "epost":"raisa.reines@somefakedomain.nu"
+        }
+    ]};
+
+    var personArray = data.personer;
+    for(var i=0; i < personArray.length; i++) {
+        var person = personArray[i];
+        $('#person-lista').append('<li>' + person.fnamn + '</li>');
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JSON Exempel</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<ul id="person-lista">
+
+</ul>
+
+
+<script>
+    var uppdateraListan = function (response) {
+        var personArray = response.personer;
+        for (var i = 0; i < personArray.length; i++) {
+            var person = personArray[i];
+            $('#person-lista').append('<li>' + person.fnamn + '</li>');
+        }
+    }
+</script>
+<script src="https://webservice.informatik.umu.se/webservice_persondb/persondb.php?name=li&limit=10&callback=uppdateraListan"></script>
+</body>
+</html>
