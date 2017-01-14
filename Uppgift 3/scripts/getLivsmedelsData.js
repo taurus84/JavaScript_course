@@ -20,7 +20,6 @@ function search() {
         url: "https://webservice.informatik.umu.se/webservice_livsmedel/getlivsmedel.php",
         dataType: "jsonp",
         data: {
-            limit: 10,
             namn: strInput
         },
         // Om förfrågan gått bra...
@@ -38,7 +37,7 @@ function search() {
                     var kolhydratVal = livsmedelArray[i].kolhydrater;
                     var proteinVal = livsmedelArray[i].protein;
                     var fettVal = livsmedelArray[i].fett;
-                    
+
                     var newTr = document.createElement("tr");       //create new row
 
                     //Skapa nya celler med en text inuti. Appenda barnen och lägg till i tabellen
